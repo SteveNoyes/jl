@@ -1,11 +1,49 @@
-.prime {
+.wrapper {
+  text-align: center;
+}
+
+.top-graph p {
+  color: $ter_color;
+}
+
+.nav-wrapper {
   background-color: $prim_color;
 }
 
-.sec {
-  background-color: $sec_color;
+.nav {
+  padding: .2em 0 2em;
 }
 
-.ter {
-  background-color: $ter_color;
+.list-wrap {
+  list-style: none;
+  text-align: center;
+  & a {
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    padding: .2em;
+    &:hover {
+      color: $sec_color;
+    }
+  }
+  & li {
+    padding-top: 1em;
+  }
+}
+
+.hero {
+  background-image: url("https://source.unsplash.com/random");
+  width: 100%;
+  height: 70vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.top-graph {
+  font-size: 40px;
+  width: 60%;
+  margin: 1em auto;
+  & img {
+    display: none;
+  }
 }

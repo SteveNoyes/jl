@@ -1,18 +1,56 @@
-.base {
-  height: 100px;
-  width: 100px;
+ul {
+  margin: 0;
+  padding: 0;
 }
 
-.prime {
-  background-color: red;
+.wrapper {
+  text-align: center;
 }
 
-.sec {
-  background-color: green;
+.top-graph p {
+  color: #007940;
 }
 
-.ter {
-  background-color: blue;
+.nav-wrapper {
+  background-color: #333333;
+}
+
+.nav {
+  padding: 0.2em 0 2em;
+}
+
+.list-wrap {
+  list-style: none;
+  text-align: center;
+}
+.list-wrap a {
+  text-decoration: none;
+  color: white;
+  font-size: 20px;
+  padding: 0.2em;
+}
+.list-wrap a:hover {
+  color: #C3984E;
+}
+.list-wrap li {
+  padding-top: 1em;
+}
+
+.hero {
+  background-image: url("https://source.unsplash.com/random");
+  width: 100%;
+  height: 70vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.top-graph {
+  font-size: 40px;
+  width: 60%;
+  margin: 1em auto;
+}
+.top-graph img {
+  display: none;
 }
 
 /*# sourceMappingURL=style.css.map */
