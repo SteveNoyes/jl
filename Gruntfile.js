@@ -49,15 +49,6 @@ module.exports = function(grunt) {
         }
     },
 
-    cssmin: {
-      target: {
-        files: [{
-          src: ['css/style.css'],
-          dest: 'dist/style.min.css'
-        }]
-      }
-    },
-
     imagemin: {
         // static: {
         // options: {
