@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/css/app.css">
+    <link rel='icon' href='/css/img/favicon_io/favicon.ico' type='image/x-icon'/ >
+    <meta charset="utf-8">
+    <title>Jammyland</title>
+  </head>
+  <body class="thankYou">
+    <div class="topnav">
+      <a id="topLogo" href="index.html"><img class="topLogo" src="/css/img/jamLandLogoOpaque.png" alt="Jammyland Logo"></a>
+      <div id="myLinks">
+        <a class="topLink" href="index.html">Home</a>
+        <a class="topLink" href="index.html#about">About</a>
+        <a href="/pages/menu.html">Menu</a>
+        <a href="/pages/contact.html">Contact</a>
+    </div>
+      <a href="javascript:void(0);" class="icon" onclick="menuToggle()">
+        <i class="fa fa-bars fa-3x"></i>
+      </a>
+    </div>
+
+
+
+  <div class="">
+
+    <div class="thankYouMessage">
+
+      <h1 class="thankYouTitle">Thank you <br> for signing up!</h1>
+
+    </div>
+
+
+  </div>
+
+
+
+  <footer class="offwhite">
+    <div class="top_color">
+
+    </div>
+
+    <form method="post" class="contactForm" name="contact_form"
+    action="form.php">
+       <h2 class="contact-title">Sign up for our newsletter.</h2>
+       <label for="name">Name:</label>
+       <input type="text" class="nameInput" name="name" placeholder="name" required>
+       <br>
+       <label for="email">Email:</label>
+       <input type="text" class="emailInput" id="email" name="email" required pattern="(.+)@(.+){1,}\.(.+){2,}" placeholder="email">
+       <br>
+       <input type="submit" name="submit" class="btn" value="Submit">
+     </form>
+
+
+    <a href="index.html"><img class="jamDog" src="/css/img/jamLandDogLogoTrans.png" alt="Jammyland Logo with Dog" height="100px;"></a>
+    <div class="social_media">
+      <a target="_blank" href="https://www.facebook.com/jammylanddtlv/"><img src="/css/img/social/facebookIcon.svg" alt="Facebook Icon" width="40px;"></a>
+      <a target="_blank" href="https://www.instagram.com/jammylandlv/"><img src="/css/img/social/InstagramSVGIcon.svg" alt="Instagram Icon" width="40px;"></a>
+      <a target="_blank" href="https://twitter.com/jammylandlv?lang=en"><img src="/css/img/social/twitterSVGIcon.svg" alt="Twitter Icon" width="40px;"></a>
+    </div>
+    <p>&#169; Jammyland 2020</p>
+  </footer>
+
+<script src="/js/app.js" charset="utf-8"></script>
+</body>
+</html>

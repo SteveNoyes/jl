@@ -8,6 +8,8 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-contrib-imagemin');
 
   const mozjpeg = require('imagemin-mozjpeg');
+  const optipng = require('imagemin-optipng');
+  const svgo = require('imagemin-svgo');
 
   const sass = require('node-sass');
   require('load-grunt-tasks')(grunt);
@@ -71,12 +73,12 @@ module.exports = function(grunt) {
         dynamic: {
           options: {
               optimizationLevel: 3,
-              use: [mozjpeg()] // Example plugin usage
+              use: [mozjpeg(), svgo(), optipng()]
           },
             files: [{
                 expand: true,
                 cwd: 'img/',
-                src: ['**/*.{png,jpg,gif}'],
+                src: ['**/*.{png,jpg,svg}'],
                 dest: 'dist/img'
             }]
         }
@@ -88,17 +90,17 @@ module.exports = function(grunt) {
         interrupt: true
       },
       js: {
-        files: ['app.js', 'main.js'],
+        files: ['js/app.js', 'js/main.js'],
         tasks: ['concat', 'uglify']
       },
 
       sass: {
-        files: ['style.scss'],
+        files: ['scss/_base.scss', 'scss/_main.scss', 'scss/_variables.scss'],
         tasks: ['sass']
       },
 
      css: {
-       files: ['style.css'],
+       files: ['css/style.css'],
        tasks: ['cssmin']
      }
    }
